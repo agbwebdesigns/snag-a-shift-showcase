@@ -19,7 +19,7 @@ I designed and built the application as the technical founder, including:
 - React frontend
 - Node/Express API
 - MongoDB/Mongoose data modeling
-- Role-based user flows
+- Role-specific route protection
 - Stripe Connect payment architecture
 - Admin dashboard concepts
 - Validation and logging patterns
