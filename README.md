@@ -59,9 +59,9 @@ I designed and built the application as the technical founder, including:
 
 This repo includes selected sanitized code samples that demonstrate my implementation style without exposing the full production codebase.
 
-## Screenshots
+## Demo Video
 
-Include screenshots here.
+[Watch the Snag-a-Shift workflow demo](https://www.youtube.com/watch?v=WvX3RVFR3uM)
 
 ## What I Learned
 
