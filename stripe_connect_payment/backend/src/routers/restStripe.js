@@ -7,9 +7,6 @@ const stripe = require("stripe")(
     apiVersion: "2023-10-16",
   },
 );
-const Employees = require("../models/employee");
-const Applications = require("../models/application");
-const Jobs = require("../models/job");
 const sendPayment = require("../controllers/createTransfer");
 
 const router = new express.Router();
