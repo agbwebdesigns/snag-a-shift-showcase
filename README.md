@@ -65,7 +65,66 @@ Include screenshots here.
 
 ## What I Learned
 
-Explain technical and business lessons.
+Snag-a-Shift was my first full-stack application, and building it taught me how the different layers of a real web app work together. It pushed me beyond building isolated frontend or backend features and helped me understand how to design, connect, secure, debug, and organize a complete application.
+
+### Connecting the Frontend and Backend
+
+One of the biggest things I learned was how to connect a React frontend to an Express/Node backend through API endpoints. I learned how frontend components use `fetch` calls to send and receive data, how backend routes handle those requests, and how the two sides of the application depend on a consistent API structure.
+
+This helped me understand full-stack development as a connected system rather than separate pieces of code.
+
+### Securing Backend Endpoints
+
+I learned how important it is to protect backend routes instead of relying only on the frontend. I used authentication middleware, JWT bearer tokens, and account-specific route protection to make sure users could only access the endpoints meant for them.
+
+I also learned how CORS affects communication between the frontend and backend, especially when the frontend and backend are running from different origins during development or deployment.
+
+### Organizing a Full-Stack Codebase
+
+As the project grew, I learned why file structure matters. Instead of keeping everything in large monolithic files, I separated the code into reusable modules, routes, controllers, middleware, models, and utility files.
+
+This made the project easier to manage, debug, and expand as new features were added.
+
+### Debugging Across the Stack
+
+Building Snag-a-Shift taught me how to debug problems across the entire application stack. I used a combination of frontend console logs, backend logs, browser DevTools, the Network tab, and React Developer Tools to trace problems from the UI to the API and database layer.
+
+This was especially helpful when debugging authentication, failed requests, state updates, and payment-related flows.
+
+### Protecting Secrets and Configuration
+
+I learned how to protect API keys, security keys, database connection strings, JWT secrets, Stripe keys, and private endpoints by moving sensitive values into environment variables.
+
+This helped me understand the difference between code that can safely be committed to a repository and configuration that needs to stay private.
+
+### Designing User Flows
+
+I learned that while many user actions can be described as CRUD operations, real applications are built around user flows. A user does not simply “create,” “read,” “update,” or “delete” something in isolation. They move through a logical sequence of steps.
+
+For Snag-a-Shift, that meant thinking through flows like:
+
+- an employer creating a shift
+- a worker applying to that shift
+- the employer reviewing applications
+- the employer approving a worker
+- the worker completing the shift
+- the payment process starting after completion
+
+Thinking in terms of flows helped me design the app around how users actually move through the product.
+
+### Integrating Stripe Connect
+
+I learned how to integrate Stripe into a marketplace app using customer accounts, connected accounts, and webhook-driven payment processing.
+
+This was one of the most complex parts of the project because payments do not happen entirely in one request. Stripe events, webhook handlers, database updates, customer records, connected accounts, and payment status changes all have to work together.
+
+Building this helped me understand how marketplace payment systems need clear state tracking, secure webhook handling, and reliable backend logic.
+
+### Building a Real Product Requires Tradeoffs
+
+Snag-a-Shift also taught me that building a real MVP requires tradeoffs. Some features need to be built deeply and carefully, especially authentication, shift workflows, and payments. Other ideas need to be simplified or deferred so the project can keep moving forward.
+
+That helped me understand the difference between building a feature and building a product.
 
 ## Production Status
 
